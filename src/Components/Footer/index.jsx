@@ -3,8 +3,7 @@ export default function Footer() {
         <footer className="w-full bg-gray-800 text-white py-8 mt-20" role="contentinfo">
             <div className="w-[90%] max-w-[1200px] mx-auto">
                 <div className="flex flex-col md:flex-row justify-between items-center gap-4">
-                    <p>© 2025 Rafael Thomaz. Todos os direitos reservados.</p>
-                    
+                    <p>© 2025 Rafael Thomaz.</p>                    
                     <div className="flex items-center gap-6" role="navigation" aria-label="Redes sociais">
                         <span className="text-white hover:text-gray-300 transition-colors" aria-hidden="true">
                             <svg className="w-6 h-6" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
