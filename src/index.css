@@ -3,6 +3,9 @@
 
 body {
   background-color: #030712;
-  cursor: pointer;
   font-family: 'Alexandria', sans-serif;
+}
+
+button{
+  cursor: pointer;
 }
