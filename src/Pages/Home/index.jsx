@@ -1,5 +1,7 @@
-import { FaReact, FaJs, FaHtml5, FaCss3Alt, FaBootstrap, FaDatabase, FaCode, FaFire, FaLinkedinIn, FaGithub, FaWhatsapp, FaEnvelope } from "react-icons/fa"
+import { FaLinkedinIn, FaGithub, FaWhatsapp, FaEnvelope } from "react-icons/fa"
 import Cards from "../../Components/Cards"
+import { motion } from "framer-motion";
+
 import Tecnologias from "../../Components/Tecnologias"
 export default function Home() {
 
@@ -7,7 +9,12 @@ export default function Home() {
         <>
             <div className="grid grid-cols-1 lg:grid-cols-[360px_1fr] gap-5 lg:gap-10 w-full max-w-[1366px] px-6 mx-auto mt-25 mb-[40px]">
 
-                <section className="relative bg-gray-50 rounded-lg pt-24">
+                <motion.section
+                    initial={{ opacity: 0, x: -150 }}
+                    animate={{ opacity: 1, x: 0 }}
+                    transition={{ duration: 1.2, ease: "easeOut" }}
+
+                    className="relative bg-gray-50 rounded-lg pt-24">
                     <picture className="absolute -top-20 left-1/2 -translate-x-1/2">
                         <img
                             src="foto.jpeg"
@@ -52,12 +59,16 @@ export default function Home() {
                         </a>
 
                     </div>
-                </section>
+                </motion.section>
 
-                <section className="bg-gray-50 rounded-lg lg:h-60 p-5">
+                <motion.section
+                    initial={{ opacity: 0, x: 150 }}
+                    animate={{ opacity: 1, x: 0 }}
+                    transition={{ duration: 1.2, ease: "easeOut" }}
+                    className="bg-gray-50 rounded-lg lg:h-60 p-5">
                     <h1 className="font-bold text-2xl">Sobre</h1>
                     <p className="font-extralight mt-3 lg:text-[20px] text-[16px]">Sou formado em Análise e Desenvolvimento de Sistemas e técnico em Desenvolvimento de Sistemas, com foco em desenvolvimento Front-End. Possuo conhecimentos aplicados em projetos práticos ao longo da minha formação. Busco minha primeira oportunidade na área para aprender, crescer profissionalmente e contribuir com soluções digitais de qualidade.</p>
-                </section>
+                </motion.section>
             </div>
 
             <h1 className="font-bold text-2xl text-gray-50 w-full max-w-[1366px] mb-5 px-6 mx-auto flex items-center justify-center lg:justify-start ">Meus projetos</h1>

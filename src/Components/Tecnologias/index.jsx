@@ -1,8 +1,14 @@
 import { FaReact, FaJs, FaHtml5, FaCss3Alt, FaBootstrap, FaDatabase, FaCode, FaFire } from "react-icons/fa"
+import { motion } from "framer-motion";
 
 export default function Tecnologias() {
     return (
-        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
+        <motion.div
+            initial={{ opacity: 0, x: -150 }}
+            whileInView={{ opacity: 1, x: 0 }}   
+            viewport={{ once: true, amount: 0.3 }} 
+            transition={{ duration: 1.2, ease: "easeOut" }}
+            className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
 
             <div className="bg-gray-900 rounded-xl p-6 flex items-center gap-4 hover:bg-gray-800 transition">
                 <FaReact className="text-cyan-400 text-4xl" />
@@ -45,6 +51,6 @@ export default function Tecnologias() {
                 <span className="text-gray-100 font-medium">Firebase</span>
             </div>
 
-        </div>
+        </motion.div>
     )
 }
