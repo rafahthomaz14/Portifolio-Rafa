@@ -68,8 +68,8 @@ export default function Home() {
                     Tecnologias e Linguagens
                 </h1>
 
-                <Tecnologias/>
-               
+                <Tecnologias />
+
             </section>
 
         </>
