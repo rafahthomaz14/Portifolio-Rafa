@@ -23,6 +23,13 @@ export default function Cards() {
             Descricao: "Software de gerenciamento de fazendas urbanas.",
             Tecnologias: "C# | SQLite | JavaScript",
             Link: "https://github.com/rafahthomaz14/Projeto_Plantech"
+        },
+        {
+            Imagem: "ecommerce.jpg",
+            Titulo: "E-commerce",
+            Descricao: "Ecommerce simples com filtros e botao de compras",
+            Tecnologias: "React JS | Tailwind | JavaScript",
+            Link: "https://github.com/rafahthomaz14/E-commerce"
         }
     ]
     return (
@@ -32,9 +39,9 @@ export default function Cards() {
                 {projetos.map((projeto, index) => (
 
                     <motion.div
-                        initial={{ opacity: 0, y: 120 }} 
+                        initial={{ opacity: 0, y: 120 }}
                         whileInView={{ opacity: 1, x: 0, y: 0 }}
-                        viewport={{ once: true, amount: 0.3 }} 
+                        viewport={{ once: true, amount: 0.3 }}
                         transition={{ duration: 1.0, ease: "easeOut" }}
                         key={index} className="Mre relative group">
                         <img src={projeto.Imagem} className="w-full lg:h-30  " />
