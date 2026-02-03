@@ -30,6 +30,13 @@ export default function Cards() {
             Descricao: "Ecommerce simples com filtros e botao de compras",
             Tecnologias: "React JS | Tailwind | JavaScript",
             Link: "https://github.com/rafahthomaz14/E-commerce"
+        },
+               {
+            Imagem: "orcamento.jpeg",
+            Titulo: "App Orçamento",
+            Descricao: "Front End do aplicativo de orçamento para freelancers",
+            Tecnologias: "React Native | Nativewind | Expo",
+            Link: "https://github.com/rafahthomaz14/App_orcamento"
         }
     ]
     return (
