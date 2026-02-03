@@ -25,7 +25,7 @@ export default function Cards() {
             Link: "https://github.com/rafahthomaz14/Projeto_Plantech"
         },
         {
-            Imagem: "ecommerce.jpg",
+            Imagem: "ecommerce.jpeg",
             Titulo: "E-commerce",
             Descricao: "Ecommerce simples com filtros e botao de compras",
             Tecnologias: "React JS | Tailwind | JavaScript",
