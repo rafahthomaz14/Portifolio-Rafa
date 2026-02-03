@@ -1,4 +1,4 @@
-import { FaReact, FaJs, FaHtml5, FaCss3Alt, FaBootstrap, FaDatabase, FaCode, FaFire } from "react-icons/fa"
+import { FaReact, FaJs, FaHtml5, FaCss3Alt, FaBootstrap, FaDatabase, FaCode, FaFire,SiExpo } from "react-icons/fa"
 import { motion } from "framer-motion";
 
 export default function Tecnologias() {
@@ -95,6 +95,27 @@ export default function Tecnologias() {
                 className="bg-gray-900 rounded-xl p-6 flex items-center gap-4 hover:bg-gray-800 transition">
                 <FaFire className="text-orange-400 text-4xl" />
                 <span className="text-gray-100 font-medium">Firebase</span>
+            </motion.div>
+            <motion.div
+                initial={{ opacity: 0, x: -150 }}
+                whileInView={{ opacity: 1, x: 0 }}
+                viewport={{ once: true, amount: 0.3 }}
+                transition={{ duration: 1.2, ease: "easeOut" }}
+                className="bg-gray-900 rounded-xl p-6 flex items-center gap-4 hover:bg-gray-800 transition"
+            >
+                <FaReact className="text-cyan-400 text-4xl" />
+                <span className="text-gray-100 font-medium">React Native</span>
+            </motion.div>
+
+            <motion.div
+                initial={{ opacity: 0, x: -150 }}
+                whileInView={{ opacity: 1, x: 0 }}
+                viewport={{ once: true, amount: 0.3 }}
+                transition={{ duration: 1.2, ease: "easeOut", delay: 0.15 }}
+                className="bg-gray-900 rounded-xl p-6 flex items-center gap-4 hover:bg-gray-800 transition"
+            >
+                <SiExpo className="text-white text-4xl" />
+                <span className="text-gray-100 font-medium">Expo</span>
             </motion.div>
 
         </div>
