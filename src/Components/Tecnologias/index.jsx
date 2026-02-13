@@ -1,4 +1,5 @@
-import { FaReact, FaJs, FaHtml5, FaCss3Alt, FaBootstrap, FaDatabase, FaCode, FaFire,SiExpo } from "react-icons/fa"
+import { FaReact, FaJs, FaHtml5, FaCss3Alt, FaBootstrap, FaDatabase, FaCode, FaFire } from "react-icons/fa"
+import { SiExpo } from "react-icons/si";
 import { motion } from "framer-motion";
 
 export default function Tecnologias() {
