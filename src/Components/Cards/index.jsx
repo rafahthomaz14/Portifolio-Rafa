@@ -3,6 +3,13 @@ import { motion } from "framer-motion";
 
 export default function Cards() {
     const projetos = [
+          {
+            Imagem: "desk2.png",
+            Titulo: "Consulta de Situação Cadastral",
+            Descricao: "Verificação para decisão rápida de abertura de cadastro",
+            Tecnologias: "React JS | Tailwind | API",
+            Link: "https://github.com/rafahthomaz14/Consulta_CNPJ"
+        },
         {
             Imagem: "mre.jpeg",
             Titulo: "Mre Soluções",
@@ -31,7 +38,7 @@ export default function Cards() {
             Tecnologias: "React JS | Tailwind | JavaScript",
             Link: "https://github.com/rafahthomaz14/E-commerce"
         },
-               {
+        {
             Imagem: "orcamento.jpeg",
             Titulo: "App Orçamento",
             Descricao: "Front End do aplicativo de orçamento para freelancers",
